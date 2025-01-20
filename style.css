@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+/* Navigation */
+
+.nav-container {
+    max-width: 1920px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo p {
+    font-family: "Quicksand";
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.link {
+    display: flex;
+    gap: 2rem;
+    margin: 0 auto;
+}
+
+.link div {
+    font-family: "Quicksand";
+    font-size: 1.6rem;
+}
+
+.home {
+    color: rgba(254, 163, 1, 1);
+    font-weight: 800;
+}
+
+.about {
+    color: rgba(1, 172, 253, 1);
+    font-weight: 500;
+}
+
+.facility {
+    color: rgba(5, 212, 223, 1);
+    font-weight: 500;
+}
+
+.addmission {
+    color: rgba(93, 88, 239, 1);
+    font-weight: 500;
+}
+
+.contact button {
+    font-family: "Quicksand";
+    font-size: 1.5rem;
+    color: white;
+    font-weight: 600;
+    background-color: rgba(254, 163, 1, 1);
+    padding: 10px 60px;
+    border-radius: 12px;
+    border: none;
+}
+
+/* Banner */
+.banner-container {
+    max-width: 1920px;
+    display: flex;
+    gap: auto;
+    justify-content: space-between;
+    margin-top: 100px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.banner-text {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.banner-text h2 {
+    font-family: "Quicksand";
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: black;
+}
+
+.empower {
+    font-family: "Quicksand";
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: rgba(254, 163, 1, 1);
+}
+
+.vision {
+    font-family: "Quicksand";
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: rgba(1, 172, 253, 1);
+}
+
+.banner-text p {
+    font-family: "Quicksand";
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 1);
+}
+
+.banner-text button {
+    font-family: "Quicksand";
+    font-size: 1.4rem;
+    color: white;
+    background: black;
+    border-radius: 10px;
+    padding: 10px 0px;
+    width: 208px;
+}
+
+/* Icons */
+.material-symbols--menu-rounded {
+    display: none;
+    width: 24px;
+    height: 24px;
+    --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='M4 18q-.425 0-.712-.288T3 17t.288-.712T4 16h16q.425 0 .713.288T21 17t-.288.713T20 18zm0-5q-.425 0-.712-.288T3 12t.288-.712T4 11h16q.425 0 .713.288T21 12t-.288.713T20 13zm0-5q-.425 0-.712-.288T3 7t.288-.712T4 6h16q.425 0 .713.288T21 7t-.288.713T20 8z'/%3E%3C/svg%3E");
+    background-color: currentColor;
+    -webkit-mask-image: var(--svg);
+    mask-image: var(--svg);
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
+}
+
+@media screen and (max-width: 576px) {
+    .material-symbols--menu-rounded {
+        display: inline-block;
+    }
+    .logo p {
+        display: none;
+    }
+
+    .home, .about, .facility, .addmission {
+        display: none;
+    }
+
+    .contact {
+        display: none;
+    }
+
+    .link {
+        margin: 0;
+    }
+
+    .nav-container {
+        justify-content: space-between;
+        margin: 12px 16px;
+    }
+}
