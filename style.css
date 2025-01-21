@@ -20,8 +20,6 @@ body {
     margin-right: 40px;
 }
 
-
-
 .logo {
     display: flex;
     align-items: center;
@@ -73,6 +71,17 @@ body {
     padding: 10px 60px;
     border-radius: 12px;
     border: none;
+}
+
+/* marquee */
+.discount {
+    font-family: "Quicksand";
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.705);
+    margin-top: 15px;
+    padding: 5px 0px;
 }
 
 /* Banner */
@@ -163,18 +172,18 @@ body {
 } 
 
 .card-1 {
-    box-shadow: inset 0px 0px 30px rgba(0, 0, 0, 0.09);
-    background: linear-gradient(rgb(204, 244, 255) 1%, rgb(255, 255, 255) 30%);
+    box-shadow: inset 0px 0px 40px rgba(0, 0, 0, 0.126);
+    background: linear-gradient(rgb(144, 231, 255) 1%, rgb(255, 255, 255) 30%);
 }
 
 .card-2 {
-    box-shadow: inset 0px 0px 30px rgba(0, 0, 0, 0.09);
-    background: linear-gradient(rgb(255, 241, 208) 1%, rgb(255, 255, 255) 30%);
+    box-shadow: inset 0px 0px 40px rgba(0, 0, 0, 0.126);
+    background: linear-gradient(rgb(255, 225, 156) 1%, rgb(255, 255, 255) 30%);
 }
 
 .card-3 {
-    box-shadow: inset 0px 0px 30px rgba(0, 0, 0, 0.09);
-    background: linear-gradient(rgb(242, 226, 255) 1%, rgb(255, 255, 255) 30%);
+    box-shadow: inset 0px 0px 40px rgba(0, 0, 0, 0.126);
+    background: linear-gradient(rgb(214, 165, 255) 1%, rgb(255, 255, 255) 30%);
 }
 
 .card-1 button {
@@ -209,6 +218,7 @@ body {
     font-size: 3rem;
     color: black;
     font-weight: 700;
+    text-align: center;
 }
 
 .curr-container h3 {
@@ -229,6 +239,295 @@ body {
     display: flex;
     gap: 15px;
 }
+
+/* Story */
+
+.story-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1920px;
+    margin-top: 60px;
+    
+    gap: 80px;
+    background: linear-gradient(rgba(255, 255, 255, 0) 1%, rgba(255, 219, 59, 0.5)), url(assets/bg.png);
+}
+
+.story-card {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    column-gap: 15px;
+    margin-right: 50px;
+    row-gap: 20px;
+}
+
+.story-card-1 {
+    grid-area: 1 / 1 / 3 / 3;
+    width: min-content;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 55px;
+    justify-self: center;
+    margin-left: 50px;
+    background-color: white;
+}
+
+.story-card img {
+    border-radius: 12px 12px 0px 0px;
+    
+}
+
+.story-card-2 {
+    grid-area: 1 / 3 / 2 / 4;
+    width: min-content;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 55px;
+    justify-self: center;
+    background-color: white;
+}
+
+.story-card-3 {
+    grid-area: 1 / 4 / 2 / 5;
+    width: min-content;
+    display: flex;
+    flex-direction: column;
+    border-radius: 12px;
+    gap: 55px;
+    justify-self: center;
+    background-color: white;
+    position: relative;
+}
+
+.story-card-4 {
+    grid-area: 2 / 3 / 3 / 4;
+    width: min-content;
+    display: flex;
+    border-radius: 12px;
+    flex-direction: column;
+    gap: 55px;
+    justify-self: center;
+    background-color: white;
+    position: relative;
+}
+
+.story-card-5 {
+    grid-area: 2 / 4 / 3 / 5;
+    width: min-content;
+    display: flex;
+    border-radius: 12px;
+    flex-direction: column;
+    gap: 55px;
+    justify-self: center;
+    background-color: white;
+    position: relative;
+}
+
+.story-container h2 {
+    font-family: "Quicksand";
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.story-card h3 {
+    font-family: "Quicksand";
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: black;
+    padding: 0px 30px;
+    margin-bottom: 20px;
+}
+
+.story-card p {
+    font-family: "Raleway";
+    font-size: 1rem;
+    font-weight: 500;
+    color: rgba(102, 102, 102, 1);
+    padding: 0px 30px;
+}
+
+.img-1 {
+    position: relative;
+}
+
+.btn-1 {
+    font-family: "Raleway";
+    color: white;
+    font-size: 1rem;
+    background-color: rgba(60, 216, 232, 1);
+    border: none;
+    border-radius: 47px;
+    padding: 15px 19px;
+    width: max-content;
+    position: absolute;
+    bottom: -20px;
+    left: 25px;
+}
+
+.img-2 {
+    position: relative;
+}
+
+.btn-2 {
+    font-family: "Raleway";
+    color: white;
+    font-size: 1rem;
+    background-color: rgba(149, 178, 38, 1);
+    border: none;
+    border-radius: 47px;
+    padding: 10px 18px;
+    width: max-content;
+    position: absolute;
+    bottom: -15px;
+    left: 25px;
+}
+
+.img-3 {
+    position: relative;
+}
+
+.btn-3 {
+    font-family: "Raleway";
+    color: white;
+    font-size: 1rem;
+    background-color: rgba(93, 88, 240, 1);
+    border: none;
+    border-radius: 47px;
+    padding: 10px 18px;
+    width: max-content;
+    position: absolute;
+    bottom: -15px;
+    left: 25px;
+}
+
+.img-4 {
+    position: relative;
+}
+
+.btn-4 {
+    font-family: "Raleway";
+    color: white;
+    font-size: 1rem;
+    background-color: rgba(149, 178, 38, 1);
+    border: none;
+    border-radius: 47px;
+    padding: 10px 18px;
+    width: max-content;
+    position: absolute;
+    bottom: -15px;
+    left: 25px;
+}
+
+.img-5 {
+    position: relative;
+}
+
+.btn-5 {
+    font-family: "Raleway";
+    color: white;
+    font-size: 1rem;
+    background-color: rgba(149, 178, 38, 1);
+    border: none;
+    border-radius: 47px;
+    padding: 10px 18px;
+    width: max-content;
+    position: absolute;
+    bottom: -15px;
+    left: 25px;
+}
+
+.view-all {
+    font-family: "Quicksand";
+    font-size: 1.5rem;
+    color: white;
+    border: none;
+    background-color: black;
+    padding: 10px 60px;
+    border-radius: 12px;
+    margin-bottom: 50px;
+}
+
+/* Footer */
+
+footer {
+    background-color: rgba(1, 172, 253, 1);
+    display: flex;
+    padding: 123px 140px;
+    justify-content: space-between;
+}
+
+.first {
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+    gap: 35px;
+}
+
+.first-sub {
+    display: flex;
+    align-items: center;
+}
+
+.first span {
+    font-family: "Quicksand";
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: white;
+}
+
+.first img {
+    width: 90px;
+    margin-bottom: 10px;
+}
+
+.first-text {
+    font-family: "Quicksand";
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: white;
+}
+
+.second {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.other {
+    font-family: "Quicksand";
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: white;
+}
+
+.about-school {
+    font-size: 1.8rem;
+    font-weight: 700;
+    font-family: "Quicksand";
+    color: white;
+}
+
+.third {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.third div {
+    font-family: "Quicksand";
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: white;
+}
+
+.footer-logo {
+    display: flex;
+    gap: 10px;
+}
+
 
 /* Icons */
 .material-symbols--menu-rounded {
@@ -252,7 +551,18 @@ body {
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Cdefs%3E%3Cmask id='ipSRightC0'%3E%3Cg fill='none' stroke-linejoin='round' stroke-width='4'%3E%3Cpath fill='%23fff' stroke='%23fff' d='M24 44c11.046 0 20-8.954 20-20S35.046 4 24 4S4 12.954 4 24s8.954 20 20 20Z'/%3E%3Cpath stroke='%23000' stroke-linecap='round' d='m21 33l9-9l-9-9'/%3E%3C/g%3E%3C/mask%3E%3C/defs%3E%3Cpath fill='rgba(254, 163, 1, 1)' d='M0 0h48v48H0z' mask='url(%23ipSRightC0)'/%3E%3C/svg%3E");
+    transition-duration: 0.3s;
 }
+
+.icon-park-solid--right-c:hover {
+    display: inline-block;
+    width: 55px;
+    height: 55px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Cdefs%3E%3Cmask id='ipSRightC0'%3E%3Cg fill='none' stroke-linejoin='round' stroke-width='4'%3E%3Cpath fill='%23fff' stroke='%23fff' d='M24 44c11.046 0 20-8.954 20-20S35.046 4 24 4S4 12.954 4 24s8.954 20 20 20Z'/%3E%3Cpath stroke='%23000' stroke-linecap='round' d='m21 33l9-9l-9-9'/%3E%3C/g%3E%3C/mask%3E%3C/defs%3E%3Cpath fill='%236cff2a' d='M0 0h48v48H0z' mask='url(%23ipSRightC0)'/%3E%3C/svg%3E");
+}
+
 
 .icon-park-solid--left-c {
     display: inline-block;
@@ -261,6 +571,16 @@ body {
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Cdefs%3E%3Cmask id='ipSLeftC0'%3E%3Cg fill='none' stroke-linejoin='round' stroke-width='4'%3E%3Cpath fill='%23fff' stroke='%23fff' d='M24 44c11.046 0 20-8.954 20-20S35.046 4 24 4S4 12.954 4 24s8.954 20 20 20Z'/%3E%3Cpath stroke='%23000' stroke-linecap='round' d='m27 33l-9-9l9-9'/%3E%3C/g%3E%3C/mask%3E%3C/defs%3E%3Cpath fill='rgba(254, 163, 1, 1)' d='M0 0h48v48H0z' mask='url(%23ipSLeftC0)'/%3E%3C/svg%3E");
+    transition-duration: 0.3s;
+}
+
+.icon-park-solid--left-c:hover {
+    display: inline-block;
+    width: 55px;
+    height: 55px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Cdefs%3E%3Cmask id='ipSLeftC0'%3E%3Cg fill='none' stroke-linejoin='round' stroke-width='4'%3E%3Cpath fill='%23fff' stroke='%23fff' d='M24 44c11.046 0 20-8.954 20-20S35.046 4 24 4S4 12.954 4 24s8.954 20 20 20Z'/%3E%3Cpath stroke='%23000' stroke-linecap='round' d='m27 33l-9-9l9-9'/%3E%3C/g%3E%3C/mask%3E%3C/defs%3E%3Cpath fill='%236cff2a' d='M0 0h48v48H0z' mask='url(%23ipSLeftC0)'/%3E%3C/svg%3E");
 }
 
 @media screen and (max-width: 576px) {
@@ -275,6 +595,10 @@ body {
         display: none;
     }
 
+    .discount {
+        margin: 0;
+    }
+
     .contact {
         display: none;
     }
@@ -285,8 +609,8 @@ body {
 
     .nav-container {
         justify-content: space-between;
-        margin: 12px 16px;
-        border-bottom: 1px solid rgba(254, 163, 1, 1);
+        margin: 12px 16px 5px 16px;
+        border-bottom: 2px solid rgba(254, 163, 1, 1);
         padding-bottom: 10px;
     }
 
@@ -303,5 +627,63 @@ body {
 
     .banner-text h2, .banner-text span {
         font-size: 2.5rem;
+    }
+
+    .story-container {
+        gap: 20px;
+    }
+
+    .card-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card-1, .card-2, .card-3 {
+        padding: 40px 50px;
+        width: 100%;
+        gap: 30px;
+    }
+
+    .arrow {
+        display: none;
+    }
+
+    .story-card {
+        grid-template-columns: repeat(2, 45%);
+        justify-content: center;
+        margin: 0;
+        column-gap: 10px;
+    }
+
+    .story-card-1 {
+        display: none;
+    }
+
+    .story-card-1, .story-card-2, .story-card-3, .story-card-4, .story-card-5 {
+        grid-area: unset;
+        width: 100%;
+        gap: 20px;
+    }
+
+    .story-card-1 img, .story-card-2 img, .story-card-3 img, .story-card-4 img, .story-card-5 img {
+        width: 100%;
+    }
+
+    .btn-2, .btn-3, .btn-4, .btn-5 {
+        font-size: 0.7rem;
+    }
+
+    .story-card-2 h3, .story-card-3 h3, .story-card-4 h3, .story-card-5 h3 {
+       padding: 0px 10px;
+    }
+
+    footer {
+        flex-direction: column;
+        padding: 50px 40px 50px 20px;
+        gap: 51px;
+    }
+
+    .first, .second, .third {
+        width: 80%;
     }
 }
